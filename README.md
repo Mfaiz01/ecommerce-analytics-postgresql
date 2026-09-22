@@ -16,23 +16,13 @@ The database models a small e-commerce platform with:
 
 ## Database Design
 
-```text
-categories
-    │
-    └──< products
-             │
-             └──< inventory
+The database consists of 7 core tables connected through primary-key and foreign-key relationships.
 
-customers
-    │
-    └──< orders
-             │
-             ├──< order_items >── products
-             │
-             └── payments
-```
+### Entity Relationship Diagram
 
-See [`docs/er-diagram.md`](docs/er-diagram.md) for the detailed ER design.
+![E-Commerce Sales & Inventory Analytics ER Diagram](docs/er-diagram.png)
+
+See [`docs/er-diagram.md`](docs/er-diagram.md) for the detailed ER design and relationship documentation.
 
 ## SQL Files
 
